@@ -1,0 +1,15 @@
+<section class="home">
+  <h2 class="home_title">Catégories</h2>
+  <input type="text" #filter class="filtre" />
+  <button (click)="search(filter.value)">Rechercher</button>
+  <section class="quiz_questions-list">
+    <div
+      class="question_container"
+      *ngFor="let content of categoriesContent; let i = index"
+    >
+      <button (click)="navigateToQuiz(content.id)">
+        <h4 class="question_label"><b></b> {{ content?.label }}</h4>
+      </button>
+    </div>
+  </section>
+</section>

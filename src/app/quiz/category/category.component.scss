@@ -1,0 +1,23 @@
+.question {
+
+    
+    &_container {
+      @apply flex flex-col items-center my-4 ml-6 p-12 bg-violet-100 rounded-lg w-full;
+    }
+  
+    &_label {
+      @apply text-lg mb-6;
+    }
+  }
+
+  .quiz{
+    &_questions-list {
+        @apply flex flex-row items-center px-32;
+      }
+  }
+
+  .filtre{
+    border: 1px solid black;
+  }
+  
+  
